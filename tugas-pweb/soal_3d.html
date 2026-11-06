@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Enam Gambar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f1f5f9;
+        }
+
+        header {
+            align-items: center;
+            padding: 16px;
+            background: #1f4e79;
+            color: white;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        footer {
+            padding: 16px;
+            background: #eeeeee;
+        }
+
+        .jarak {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* Membuat susunan gambar menjadi 3 kolom */
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        /* Mengatur ukuran gambar agar tidak keluar dari kolom */
+        .galeri img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        } 
+    </style>
+</head>
+<body>
+    <header class="jarak">
+        <h2 class="logo">Galeri Gue</h2>
+    </header>
+
+    <main>
+        <div class="galeri">
+            <img src="galeriku/Imrity (Sertifikat).jpg" alt="Gambar 1">
+            <img src="galeriku/Madara War.jpg" alt="Gambar 2">
+            <img src="galeriku/Patung Dewa Shinobi.png" alt="Gambar 3">
+            <img src="galeriku/Pranggok (Geanber).jpg" alt="Gambar 4">
+            <img src="galeriku/Samping audit.jpg" alt="Gambar 5">
+            <img src="galeriku/volcano-3779159_1280.jpg" alt="Gambar 6">
+        </div>
+    </main>
+
+    <footer class="jarak">
+        <p>&copy; Yoga Asep Triyadi</p>
+    </footer>
+</body>
+</html>

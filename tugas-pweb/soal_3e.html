@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi</title>
+
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f1f5f9;
+        }
+
+        /* Mengatur judul halaman */
+        h1 {
+            color: #1e3a8a;
+        }
+
+        /* Menyusun menu secara mendatar */
+        .navigasi {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            background-color: #1e293b;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        /* Memberi efek saat kursor diarahkan ke tautan */
+        .navigasi a:hover {
+            color: #93c5fd;
+        }
+        
+        .tombol {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        /* Efek ketika kursor diarahkan ke tombol */
+        .tombol:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Menavigasi Kehidupan</h1>
+    <nav class="navigasi">
+        <a href="#beranda" class="tombol">Beranda</a>
+        <a href="#profil" class="tombol">Profil</a>
+        <a href="#layanan" class="tombol">Layanan</a>
+        <a href="#galeri" class="tombol">Galeri</a>
+        <a href="#kontak" class="tombol">Kontak</a>
+    </nav>
+</body>
+</html>
